@@ -22,5 +22,10 @@ RSpec.describe Gema do
         expect(Gema::Punto.new(0,0).to_s).to eq("(0,0)")
       end
     end
+    context "Métodos de instancia" do
+      it "Se puede multiplicar un punto por un escalar" do
+        expect((Gema::Punto.new(1,1)*5).to_s).to eq("(5,5)")
+      end
+    end
   end
 end
